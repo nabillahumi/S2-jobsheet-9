@@ -35,11 +35,13 @@ public class MahasiswaDemo18 {
                 case 2:
                     Mahasiswa18 dinilai = stack.pop();
                     if (dinilai != null) {
-                    System.out.println("Menilai tugas dari " + dinilai.nama);
-                    System.out.print("Masukkan nilai (0-100) : ");
-                    int nilai =  sc.nextInt(); 
-                    dinilai.tugasDinilai(nilai);
-                    System.out.printf("Nilai Tugas %s adalah %d\n " , dinilai.nama, nilai);
+                        System.out.println("Menilai tugas dari " + dinilai.nama);
+                        System.out.print("Masukkan nilai (0-100) : ");
+                        int nilai =  sc.nextInt(); 
+                        dinilai.tugasDinilai(nilai);
+                        System.out.printf("Nilai Tugas %s adalah %d\n " , dinilai.nama, nilai);
+                        String biner = stack.konversiDesimalKeBiner(nilai);
+                        System.out.println("Nilai Biner Tugas : " + biner);
                     }
                     break;
                 case 3:
@@ -69,3 +71,4 @@ public class MahasiswaDemo18 {
 
     }
 }
+
